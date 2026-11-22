@@ -68,6 +68,7 @@ Novas áreas entram como novos diretórios, dentro do contexto de engenharia web
 
 ### 6.1 Site
 
+- Hospedado na Vercel, em `content-directory.quila.dev`, com o servidor Nitro ativo. `/mcp` é uma rota de servidor, então um deploy só estático (`nuxt generate`) não a serviria.
 - Navegação lateral por área, sumário por página e busca.
 - Tema claro e escuro.
 - Imagem de Open Graph por página.
@@ -129,9 +130,7 @@ VS Code (`.vscode/mcp.json`):
 
 ### 7.3 O que falta
 
-- **Identidade.** `mcp.name` no `nuxt.config.ts` ainda é `Docs template`.
 - **Descrições das tools.** Estão em inglês e citam exemplos do template (`/getting-started/installation`). Reescrever com exemplos das áreas reais, porque é esse texto que o modelo usa para decidir quando chamar a tool.
-- **Hospedagem com runtime de servidor.** `/mcp` é uma rota de servidor; um deploy só estático (`nuxt generate`) não a serve. O deploy precisa rodar o servidor Nitro (Node, Vercel, Netlify, Cloudflare ou similar).
 - **Página "Usar com IA"** no site, com as instruções da seção 7.2.
 
 ### 7.4 Evoluções possíveis
@@ -151,7 +150,3 @@ Itens que ainda carregam a identidade do Nuxt Docs Template:
 - Toda área da seção 5.1 tem introdução e ao menos um post com frontmatter completo.
 - Um cliente MCP conectado ao site em produção lista as páginas e lê um post.
 - Nenhuma referência ao template original aparece no site publicado, exceto o crédito no `LICENSE-CODE` e no README.
-
-## 10. Questões em aberto
-
-- Onde o site será hospedado? (O domínio é `content-directory.quila.dev`.)
