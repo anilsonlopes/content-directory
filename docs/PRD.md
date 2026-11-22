@@ -130,7 +130,6 @@ VS Code (`.vscode/mcp.json`):
 
 ### 7.3 O que falta
 
-- **Descrições das tools.** Estão em inglês e citam exemplos do template (`/getting-started/installation`). Reescrever com exemplos das áreas reais, porque é esse texto que o modelo usa para decidir quando chamar a tool.
 - **Página "Usar com IA"** no site, com as instruções da seção 7.2.
 
 ### 7.4 Evoluções possíveis

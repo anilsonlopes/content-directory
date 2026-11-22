@@ -1,24 +1,21 @@
 import { queryCollection } from '@nuxt/content/server'
 
 export default defineMcpTool({
-  description: `Lists all available documentation pages with their categories and basic information.
+  description: `Lista todas as páginas do content-directory, a base de conhecimento de Anilson Lopes (Quila) sobre engenharia web, com título, caminho, descrição e URL.
 
-WHEN TO USE: Use this tool when you need to EXPLORE or SEARCH for documentation about a topic but don't know the exact page path. Common scenarios:
-- "Find documentation about markdown features" - explore available guides
-- "Show me all getting started guides" - browse introductory content
-- "Search for advanced configuration options" - find specific topics
-- User asks general questions without specifying exact pages
-- You need to understand the overall documentation structure
+QUANDO USAR: sempre que a conversa tocar em uma das áreas da base e você ainda não souber o caminho exato da página. Chame antes de responder de memória. Áreas cobertas:
+- Acessibilidade: estrutura semântica, navegação por teclado, contraste e cores, formulários.
+- Performance: otimização de imagens, JavaScript, caching e CDN, métricas, Progressive Web Apps.
+- Sustentabilidade: código eficiente, recursos otimizados, hosting verde, medição.
+- UX Engineering: heurísticas de usabilidade, arquitetura da informação, design system, design review, microinterações, handoff, documentação de decisões.
+- Product Discovery: design thinking, entrevistas e personas, storyboarding e jornadas, papéis, discovery contínuo.
+- Qualidade e DX: pirâmide de testes.
 
-WHEN NOT TO USE: If you already know the specific page path (e.g., "/getting-started/installation"), use get-page directly instead.
+Exemplos de pedidos que devem disparar esta tool: "como deixo esse formulário acessível?", "revisa a performance dessa página", "como conduzir uma entrevista de discovery?", "como documentar essa decisão?".
 
-WORKFLOW: This tool returns page titles, descriptions, and paths. After finding relevant pages, use get-page to retrieve the full content of specific pages that match the user's needs.
+QUANDO NÃO USAR: se você já tem o caminho exato (por exemplo, "/acessibilidade/formularios"), chame get-page direto.
 
-OUTPUT: Returns a structured list with:
-- title: Human-readable page name
-- path: Exact path for use with get-page
-- description: Brief summary of page content
-- url: Full URL for reference`,
+PRÓXIMO PASSO: escolha as páginas relevantes pelo título e pela descrição e chame get-page com o campo path de cada uma.`,
   cache: '1h',
   handler: async () => {
     const event = useEvent()
@@ -42,7 +39,7 @@ OUTPUT: Returns a structured list with:
       }
     } catch {
       return {
-        content: [{ type: 'text', text: 'Failed to list pages' }],
+        content: [{ type: 'text', text: 'Falha ao listar as páginas' }],
         isError: true
       }
     }

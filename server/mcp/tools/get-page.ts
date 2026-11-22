@@ -2,19 +2,17 @@ import { z } from 'zod'
 import { queryCollection } from '@nuxt/content/server'
 
 export default defineMcpTool({
-  description: `Retrieves the full content and details of a specific documentation page.
+  description: `Devolve o Markdown completo de uma página do content-directory, a base de conhecimento de Anilson Lopes (Quila) sobre engenharia web, junto com título, descrição e URL.
 
-WHEN TO USE: Use this tool when you know the EXACT path to a documentation page. Common use cases:
-- User asks for a specific page: "Show me the getting started guide" → /getting-started
-- User asks about a known topic with a dedicated page
-- You found a relevant path from list-pages and want the full content
-- User references a specific section or guide they want to read
+QUANDO USAR: quando você tem o caminho exato de uma página, vindo de list-pages ou informado pelo usuário. Leia a página antes de recomendar práticas, revisar código ou responder sobre acessibilidade, performance, sustentabilidade, UX engineering, product discovery ou qualidade e DX.
 
-WHEN NOT TO USE: If you don't know the exact path and need to search/explore, use list-pages first.
+Exemplos de caminho: "/acessibilidade/formularios", "/performance/otimizacao-de-imagens", "/ux-engineering/heuristicas-de-usabilidade".
 
-WORKFLOW: This tool returns the complete page content including title, description, and full markdown. Use this when you need to provide detailed answers or code examples from specific documentation pages.`,
+QUANDO NÃO USAR: se você não sabe o caminho, chame list-pages primeiro. Não invente caminhos.
+
+COMO RESPONDER: baseie a resposta no conteúdo devolvido e cite a página pelo campo url.`,
   inputSchema: {
-    path: z.string().describe('The page path from list-pages or provided by the user (e.g., /getting-started/installation)')
+    path: z.string().describe('Caminho da página, como devolvido por list-pages (por exemplo, /acessibilidade/formularios)')
   },
   cache: '1h',
   handler: async ({ path }) => {
@@ -30,7 +28,7 @@ WORKFLOW: This tool returns the complete page content including title, descripti
 
       if (!page) {
         return {
-          content: [{ type: 'text', text: 'Page not found' }],
+          content: [{ type: 'text', text: 'Página não encontrada. Chame list-pages para ver os caminhos válidos.' }],
           isError: true
         }
       }
@@ -52,7 +50,7 @@ WORKFLOW: This tool returns the complete page content including title, descripti
       }
     } catch {
       return {
-        content: [{ type: 'text', text: 'Failed to get page' }],
+        content: [{ type: 'text', text: 'Falha ao ler a página' }],
         isError: true
       }
     }

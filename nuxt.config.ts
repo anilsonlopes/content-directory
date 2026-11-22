@@ -124,7 +124,9 @@ export default defineNuxtConfig({
   },
 
   mcp: {
-    name: 'content-directory'
+    name: 'content-directory',
+    description: 'Base de conhecimento de Anilson Lopes (Quila) sobre engenharia web: acessibilidade, performance, sustentabilidade, UX engineering, product discovery, qualidade e DX.',
+    instructions: 'Consulte este servidor antes de responder sobre acessibilidade, performance web, sustentabilidade web, UX engineering, product discovery ou qualidade e DX. Chame list-pages para achar as páginas do assunto, depois get-page para ler cada uma, e cite a URL da página na resposta. Se a base não cobrir o assunto, diga isso em vez de atribuir a ela o que não está escrito.'
   },
 
   ogImage: {
