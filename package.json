@@ -1,6 +1,7 @@
 {
-  "name": "nuxt-ui-template-docs",
-  "private": true,
+  "name": "content-directory",
+  "private": false,
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "build": "nuxt build",

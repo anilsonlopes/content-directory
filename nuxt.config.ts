@@ -57,40 +57,61 @@ export default defineNuxtConfig({
   },
 
   llms: {
-    domain: 'https://docs-template.nuxt.dev',
-    title: 'Nuxt Docs Template',
-    description: 'A template for building documentation with Nuxt UI and Nuxt Content.',
+    domain: 'https://content-directory.quila.dev',
+    title: 'content-directory',
+    description: 'Base de conhecimento sobre engenharia web: acessibilidade, performance, sustentabilidade, UX engineering, product discovery, qualidade e DX.',
     full: {
-      title: 'Nuxt Docs Template - Full Documentation',
-      description: 'This is the full documentation for the Nuxt Docs Template.'
+      title: 'content-directory - Conteúdo completo',
+      description: 'Conteúdo completo da base de conhecimento sobre engenharia web.'
     },
     sections: [
       {
-        title: 'Getting Started',
+        title: 'Acessibilidade',
         contentCollection: 'docs',
         contentFilters: [
-          { field: 'path', operator: 'LIKE', value: '/getting-started%' }
+          { field: 'path', operator: 'LIKE', value: '/acessibilidade%' }
         ]
       },
       {
-        title: 'Essentials',
+        title: 'Performance',
         contentCollection: 'docs',
         contentFilters: [
-          { field: 'path', operator: 'LIKE', value: '/essentials%' }
+          { field: 'path', operator: 'LIKE', value: '/performance%' }
         ]
       },
       {
-        title: 'AI',
+        title: 'Sustentabilidade',
         contentCollection: 'docs',
         contentFilters: [
-          { field: 'path', operator: 'LIKE', value: '/ai%' }
+          { field: 'path', operator: 'LIKE', value: '/sustentabilidade%' }
+        ]
+      },
+      {
+        title: 'UX Engineering',
+        contentCollection: 'docs',
+        contentFilters: [
+          { field: 'path', operator: 'LIKE', value: '/ux-engineering%' }
+        ]
+      },
+      {
+        title: 'Product Discovery',
+        contentCollection: 'docs',
+        contentFilters: [
+          { field: 'path', operator: 'LIKE', value: '/product-discovery%' }
+        ]
+      },
+      {
+        title: 'Qualidade e DX',
+        contentCollection: 'docs',
+        contentFilters: [
+          { field: 'path', operator: 'LIKE', value: '/qualidade-e-dx%' }
         ]
       }
     ]
   },
 
   mcp: {
-    name: 'Docs template'
+    name: 'content-directory'
   },
 
   ogImage: {
