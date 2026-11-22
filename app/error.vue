@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
+import { pt_br } from '@nuxt/ui/locale'
 
 defineProps<{
   error: NuxtError
@@ -7,13 +8,13 @@ defineProps<{
 
 useHead({
   htmlAttrs: {
-    lang: 'en'
+    lang: 'pt-BR'
   }
 })
 
 useSeoMeta({
-  title: 'Page not found',
-  description: 'We are sorry but this page could not be found.'
+  title: 'Página não encontrada',
+  description: 'Desculpe, não encontramos esta página.'
 })
 
 const { data: navigation } = await useAsyncData('navigation', () => queryCollectionNavigation('docs'))
@@ -25,7 +26,7 @@ provide('navigation', navigation)
 </script>
 
 <template>
-  <UApp>
+  <UApp :locale="pt_br">
     <AppHeader />
 
     <UError :error="error" />

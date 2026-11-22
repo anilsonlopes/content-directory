@@ -42,13 +42,13 @@ export default defineAppConfig({
     }]
   },
   toc: {
-    title: 'Table of Contents',
+    title: 'Nesta página',
     bottom: {
-      title: 'Community',
+      title: 'Comunidade',
       edit: 'https://github.com/anilsonlopes/content-directory/edit/main/content',
       links: [{
         icon: 'i-lucide-star',
-        label: 'Star on GitHub',
+        label: 'Dar estrela no GitHub',
         to: 'https://github.com/anilsonlopes/content-directory',
         target: '_blank'
       }]

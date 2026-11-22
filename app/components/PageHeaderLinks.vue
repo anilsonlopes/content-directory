@@ -12,33 +12,33 @@ const mdPath = computed(() => `${site.url}/raw${routePath.value}.md`)
 
 const items = [
   {
-    label: 'Copy Markdown link',
+    label: 'Copiar link do Markdown',
     icon: 'i-lucide-link',
     onSelect() {
       copy(mdPath.value)
       toast.add({
-        title: 'Copied to clipboard',
+        title: 'Copiado para a área de transferência',
         icon: 'i-lucide-check-circle'
       })
     }
   },
   {
-    label: 'View as Markdown',
+    label: 'Ver como Markdown',
     icon: 'i-simple-icons:markdown',
     target: '_blank',
     to: `/raw${routePath.value}.md`
   },
   {
-    label: 'Open in ChatGPT',
+    label: 'Abrir no ChatGPT',
     icon: 'i-simple-icons:openai',
     target: '_blank',
-    to: `https://chatgpt.com/?hints=search&q=${encodeURIComponent(`Read ${mdPath.value} so I can ask questions about it.`)}`
+    to: `https://chatgpt.com/?hints=search&q=${encodeURIComponent(`Leia ${mdPath.value} para que eu possa fazer perguntas sobre o conteúdo.`)}`
   },
   {
-    label: 'Open in Claude',
+    label: 'Abrir no Claude',
     icon: 'i-simple-icons:anthropic',
     target: '_blank',
-    to: `https://claude.ai/new?q=${encodeURIComponent(`Read ${mdPath.value} so I can ask questions about it.`)}`
+    to: `https://claude.ai/new?q=${encodeURIComponent(`Leia ${mdPath.value} para que eu possa fazer perguntas sobre o conteúdo.`)}`
   }
 ]
 
@@ -50,7 +50,7 @@ async function copyPage() {
 <template>
   <UFieldGroup>
     <UButton
-      label="Copy page"
+      label="Copiar página"
       :icon="copied ? 'i-lucide-copy-check' : 'i-lucide-copy'"
       color="neutral"
       variant="outline"
@@ -75,7 +75,7 @@ async function copyPage() {
         size="sm"
         color="neutral"
         variant="outline"
-        aria-label="Open copy actions menu"
+        aria-label="Abrir menu de ações de cópia"
       />
     </UDropdownMenu>
   </UFieldGroup>
