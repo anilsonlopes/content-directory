@@ -1,242 +1,203 @@
 ---
-title: Nuxt Docs Template
-description: Create stunning, fast and SEO-optimized documentation sites with Nuxt UI.
+title: Content Directory
+description: Diferente do desenvolvimento web tradicional, focado apenas em criar interfaces ou APIs, a engenharia web abrange todo o ciclo de vida e infraestrutura do ecossistema digital moderno.
 ---
 
 ::u-page-hero{class="dark:bg-gradient-to-b from-neutral-900 to-neutral-950"}
----
-orientation: horizontal
----
 #top
 :hero-background
 
 #title
-Ship Beautiful [Documentation]{.text-primary}.
+Content [Directory]{.text-primary}.
 
 #description
-Build professional documentation with Nuxt UI's powerful components, enhanced typography, and seamless Nuxt Content integration. The same system trusted by the entire [Nuxt ecosystem](https://nuxt.com).
+Base de conhecimento sobre engenharia web: a aplicação de princípios rígidos de engenharia, arquitetura de software e design de sistemas no desenvolvimento de aplicações web escaláveis, de alta performance e resilientes. Diferente do desenvolvimento web tradicional, focado apenas em criar interfaces ou APIs, a engenharia web abrange todo o ciclo de vida e infraestrutura do ecossistema digital moderno.
 
 #links
   :::u-button
   ---
-  to: /getting-started
+  to: /acessibilidade/introducao
   size: xl
   trailing-icon: i-lucide-arrow-right
   ---
-  Get started
+  Começar a leitura
   :::
 
   :::u-button
   ---
-  icon: i-simple-icons-github
+  icon: i-lucide-layers
   color: neutral
   variant: outline
   size: xl
-  to: https://github.com/nuxt-ui-templates/docs
-  target: _blank
+  to: '#pilares'
   ---
-  Use this template
+  Conhecer os pilares
+  :::
+::
+
+::u-page-section{id="pilares" class="dark:bg-neutral-950"}
+#title
+Pilares da Engenharia Web Moderna
+
+#features
+  :::u-page-feature
+  ---
+  icon: i-lucide-gauge
+  to: /performance/introducao
+  ---
+  #title
+  Arquitetura & Performance Front-End
+
+  #description
+  Renderização híbrida (SSR, SSG, ISR), otimização de _Core Web Vitals_, gerenciamento de estado complexo e estratégia de _bundling/code-splitting_.
   :::
 
-#default
-  :::prose-pre
+  :::u-page-feature
   ---
-  code: |
-    export default defineNuxtConfig({
-      modules: [
-        '@nuxt/ui',
-        '@nuxt/content',
-        'nuxt-og-image',
-        'nuxt-llms'
-      ],
-
-      css: ['~/assets/css/main.css']
-    })
-  filename: nuxt.config.ts
+  icon: i-lucide-server
   ---
+  #title
+  Sistemas & APIs (Back-End)
 
-  ```ts [nuxt.config.ts]
-  export default defineNuxtConfig({
-    modules: [
-      '@nuxt/ui',
-      '@nuxt/content',
-      'nuxt-og-image',
-      'nuxt-llms'
-    ],
+  #description
+  Design de APIs (REST, GraphQL, gRPC), arquitetura orientada a eventos, gerenciamento de dados e estratégias de _caching_ (Redis, Edge CDN).
+  :::
 
-    css: ['~/assets/css/main.css']
-  })
-  ```
+  :::u-page-feature
+  ---
+  icon: i-lucide-cloud
+  ---
+  #title
+  Infraestrutura & Edge Computing
+
+  #description
+  Deploy em redes distribuídas (_Edge Workers_), CI/CD, monitoramento de runtime (observabilidade, RUM) e estratégias de mitigações de falhas.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-shield-check
+  to: /qualidade-e-dx/introducao
+  ---
+  #title
+  Qualidade & DX (Developer Experience)
+
+  #description
+  Automação de testes (unitários, integração, E2E), padronização de código, tipagem estática e arquiteturas limpas.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-pen-tool
+  to: /ux-engineering/introducao
+  ---
+  #title
+  UX Engineering
+
+  #description
+  Tradução de princípios de experiência, arquitetura da informação e sistemas de design em interfaces consistentes, acessíveis e implementáveis.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-compass
+  to: /product-discovery/introducao
+  ---
+  #title
+  Product Discovery
+
+  #description
+  Investigação contínua de problemas, oportunidades e hipóteses antes de comprometer esforço de desenvolvimento.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-users
+  to: /product-discovery/papeis-e-colaboracao
+  ---
+  #title
+  Colaboração de Produto
+
+  #description
+  Handoffs, revisões e comunicação que conectam experiência, negócio e tecnologia ao longo de todo o ciclo de entrega.
   :::
 ::
 
 ::u-page-section{class="dark:bg-neutral-950"}
 #title
-Powered by Nuxt UI components
-
-#links
-  :::u-button
-  ---
-  color: neutral
-  size: lg
-  target: _blank
-  to: https://ui.nuxt.com/docs/getting-started/installation/nuxt
-  trailingIcon: i-lucide-arrow-right
-  variant: subtle
-  ---
-  Explore Nuxt UI
-  :::
+Explore os guias
 
 #features
   :::u-page-feature
   ---
-  icon: i-lucide-palette
+  icon: i-lucide-accessibility
+  to: /acessibilidade/introducao
   ---
   #title
-  100+ UI Components
+  Acessibilidade
 
   #description
-  Access the complete Nuxt UI component library. From badges to modals, everything styled and accessible out of the box.
+  Estrutura semântica, navegação por teclado, contraste e cores e formulários acessíveis.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-type
+  icon: i-lucide-zap
+  to: /performance/introducao
   ---
   #title
-  Beautiful Typography
+  Performance
 
   #description
-  Pre-styled prose components with perfect visual harmony. No need for @tailwindcss/typography - get precise control over every element.
+  Otimização de imagens, JavaScript otimizado, caching e CDN, métricas e monitoramento e Progressive Web Apps.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-layers
+  icon: i-lucide-leaf
+  to: /sustentabilidade/introducao
   ---
   #title
-  Rich Prose Components
+  Sustentabilidade
 
   #description
-  Accordions, cards, callouts, tabs, steps, code blocks, and more - all provided by Nuxt UI for interactive documentation.
+  Código eficiente, recursos otimizados, hosting verde e medição e monitoramento.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-search
+  icon: i-lucide-pen-tool
+  to: /ux-engineering/introducao
   ---
   #title
-  Built-in Search
+  UX Engineering
 
   #description
-  Full-text search with ContentSearch component. No need for Algolia - instant, relevant results with keyboard shortcuts (⌘K).
+  Heurísticas de usabilidade, arquitetura da informação, Design System, auditoria de UI, microinterações e handoff.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-navigation
+  icon: i-lucide-compass
+  to: /product-discovery/introducao
   ---
   #title
-  Smart Navigation
+  Product Discovery
 
   #description
-  Auto-generated navigation with ContentNavigation and ContentToc components. Sticky table of contents and prev/next links.
+  Design Thinking, entrevistas e personas, storyboarding e jornadas e discovery contínuo orientado por dados.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-moon
+  icon: i-lucide-shield-check
+  to: /qualidade-e-dx/introducao
   ---
   #title
-  Dark Mode Ready
+  Qualidade e DX
 
   #description
-  Automatic theme switching with smooth transitions. Respects system preferences and remembers user choice.
-  :::
-::
-
-::u-page-section{class="dark:bg-neutral-950"}
-#title
-Enhanced with Nuxt Content
-
-#links
-  :::u-button
-  ---
-  color: neutral
-  size: lg
-  target: _blank
-  to: https://content.nuxt.com/docs/getting-started/installation
-  trailingIcon: i-lucide-arrow-right
-  variant: subtle
-  ---
-  Explore Nuxt Content
-  :::
-
-#features
-  :::u-page-feature
-  ---
-  icon: i-simple-icons-markdown
-  ---
-  #title
-  MDC Enhanced Markdown
-
-  #description
-  Write in Markdown while embedding Vue components. Seamlessly integrate interactive elements in your content.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-file-text
-  ---
-  #title
-  File-based Routing
-
-  #description
-  Organize content in folders and files. Your documentation structure automatically becomes your navigation.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-code
-  ---
-  #title
-  Syntax Highlighting
-
-  #description
-  Beautiful code blocks with language detection, line numbers, and copy buttons. Support for 100+ languages.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-database
-  ---
-  #title
-  Content Database
-
-  #description
-  Query your content with a MongoDB-like API. Filter, sort, and search through your documentation programmatically.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-file-code
-  ---
-  #title
-  Frontmatter Support
-
-  #description
-  Add metadata to your content files. Define SEO tags, navigation properties, and custom fields.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-git-branch
-  ---
-  #title
-  Version Control
-
-  #description
-  Content lives in your repository. Branch, review, and deploy documentation alongside your code.
+  Pirâmide de testes e práticas de qualidade e Developer Experience.
   :::
 ::
 
@@ -244,16 +205,15 @@ Enhanced with Nuxt Content
   :::u-page-c-t-a
   ---
   links:
-    - label: Start building
-      to: '/getting-started'
+    - label: Começar a leitura
+      to: '/acessibilidade/introducao'
       trailingIcon: i-lucide-arrow-right
-    - label: View on GitHub
-      to: 'https://github.com/nuxt-ui-templates/docs'
-      target: _blank
+    - label: Conhecer os pilares
+      to: '#pilares'
       variant: subtle
-      icon: i-simple-icons-github
-  title: Ready to build an amazing documentation?
-  description: Join thousands of developers building with Nuxt and Nuxt UI. Get this template and start shipping today.
+      icon: i-lucide-layers
+  title: Pronto para aprofundar em Engenharia Web?
+  description: Percorra os guias de acessibilidade, performance, sustentabilidade, UX Engineering, Product Discovery e qualidade.
   class: dark:bg-neutral-950
   ---
 
