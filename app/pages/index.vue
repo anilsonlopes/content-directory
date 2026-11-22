@@ -15,7 +15,7 @@ useSeoMeta({
   ogDescription: description
 })
 
-defineOgImage('Docs', { title, description })
+defineOgImage('Home')
 </script>
 
 <template>

@@ -1,3 +1,5 @@
+[![content-directory: contexto pra gente e pra máquina](./.github/banner.png)](https://content-directory.quila.dev)
+
 # Content Directory
 
 Base de conhecimento pessoal sobre engenharia web: acessibilidade, performance, sustentabilidade, UX engineering, product discovery, qualidade e DX. Os posts são autorais, com fontes referenciadas, e ficam em Markdown no diretório `content/`.

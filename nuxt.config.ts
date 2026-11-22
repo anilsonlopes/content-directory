@@ -66,7 +66,9 @@ export default defineNuxtConfig({
   fonts: {
     families: [
       { name: 'Archivo', weights: [400, 500, 600, 700, 800] },
-      { name: 'DM Mono', weights: [400, 500] }
+      { name: 'DM Mono', weights: [400, 500] },
+      // só nas OG images: o itálico serifado da tagline (substituto do Georgia)
+      { name: 'Gelasio', weights: [400], styles: ['italic'] }
     ]
   },
 
