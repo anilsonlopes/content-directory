@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/ui',
     '@nuxt/content',
+    'nuxt-studio',
     'nuxt-og-image',
     'nuxt-llms',
     'nuxt-agent-discovery',
@@ -138,5 +139,25 @@ export default defineNuxtConfig({
       '/'
     ],
     crawlLinks: true
+  },
+
+  // editor em /_studio; em produção exige login pelo GitHub e commita direto na main
+  studio: {
+    repository: {
+      provider: 'github',
+      owner: 'anilsonlopes',
+      repo: 'content-directory',
+      branch: 'main',
+      // repo público: o OAuth pede só o escopo public_repo
+      private: false
+    },
+    i18n: {
+      defaultLocale: 'pt-br'
+    },
+    git: {
+      commit: {
+        messagePrefix: '📝'
+      }
+    }
   }
 })
