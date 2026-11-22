@@ -53,6 +53,7 @@ Novas áreas entram como novos diretórios, dentro do contexto de engenharia web
 ### 5.3 Requisitos de cada post
 
 - Frontmatter com `title` e `description`. São os campos que a navegação, a busca, o SEO e as tools de MCP devolvem.
+- Nome de arquivo no formato `N.nome-em-kebab-case.md`, sem espaços nem acentos, espelhando o slug da URL (`1.estrutura-semantica.md` vira `/acessibilidade/estrutura-semantica`). O título exibido vem do frontmatter.
 - Seção de referências no final quando houver fontes.
 
 ### 5.4 Licenciamento
@@ -143,7 +144,7 @@ VS Code (`.vscode/mcp.json`):
 
 Itens que ainda carregam a identidade do Nuxt Docs Template:
 
-- Posts sem frontmatter (por exemplo, `content/1.acessibilidade/0.introdução.md`).
+- Posts sem frontmatter (por exemplo, `content/1.acessibilidade/0.introducao.md`).
 
 ## 9. Critérios de sucesso
 
@@ -154,4 +155,3 @@ Itens que ainda carregam a identidade do Nuxt Docs Template:
 ## 10. Questões em aberto
 
 - Onde o site será hospedado? (O domínio é `content-directory.quila.dev`.)
-- Nomes de arquivo com espaço e acento (`1. Estrutura semântica.md`) geram as URLs desejadas, ou vale padronizar em kebab-case?
