@@ -138,13 +138,7 @@ VS Code (`.vscode/mcp.json`):
 - Filtro por área em `list-pages`.
 - Prompts reutilizáveis em `server/mcp/prompts/` (por exemplo, "revise este componente com base nos posts de acessibilidade").
 
-## 8. Pendências herdadas do template
-
-Itens que ainda carregam a identidade do Nuxt Docs Template:
-
-- Posts sem frontmatter (por exemplo, `content/1.acessibilidade/0.introducao.md`).
-
-## 9. Critérios de sucesso
+## 8. Critérios de sucesso
 
 - Toda área da seção 5.1 tem introdução e ao menos um post com frontmatter completo.
 - Um cliente MCP conectado ao site em produção lista as páginas e lê um post.
