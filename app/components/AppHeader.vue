@@ -44,8 +44,6 @@ const { header } = useAppConfig()
       >
         <AppLogo class="w-auto h-6 shrink-0" />
       </NuxtLink>
-
-      <TemplateMenu />
     </template>
 
     <template #right>
