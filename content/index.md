@@ -33,6 +33,17 @@ Base de conhecimento sobre engenharia web: a aplicação de princípios rígidos
   ---
   Conhecer os pilares
   :::
+
+  :::u-button
+  ---
+  icon: i-lucide-bot
+  color: neutral
+  variant: ghost
+  size: xl
+  to: /usar-com-ia
+  ---
+  Usar com IA
+  :::
 ::
 
 ::u-page-section{id="pilares" class="border-t border-default"}

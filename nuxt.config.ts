@@ -82,6 +82,13 @@ export default defineNuxtConfig({
     },
     sections: [
       {
+        title: 'Usar com IA',
+        contentCollection: 'docs',
+        contentFilters: [
+          { field: 'path', operator: '=', value: '/usar-com-ia' }
+        ]
+      },
+      {
         title: 'Acessibilidade',
         contentCollection: 'docs',
         contentFilters: [

@@ -128,9 +128,9 @@ VS Code (`.vscode/mcp.json`):
 }
 ```
 
-### 7.3 O que falta
+### 7.3 Página "Usar com IA"
 
-- **Página "Usar com IA"** no site, com as instruções da seção 7.2.
+As instruções da seção 7.2 estão publicadas no site em [`/usar-com-ia`](https://content-directory.quila.dev/usar-com-ia) (`content/0.usar-com-ia.md`), junto com os passos para clientes de chat (Claude e ChatGPT), a descrição das tools e exemplos de pedidos. Ao mudar a forma de conexão, atualize a página e a seção 7.2 juntas.
 
 ### 7.4 Evoluções possíveis
 
