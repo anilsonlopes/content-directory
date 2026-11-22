@@ -3,6 +3,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/image',
+    // explícito e antes do nuxt-og-image: sem isso as OG images caem na fonte Inter
+    '@nuxt/fonts',
     '@nuxt/ui',
     '@nuxt/content',
     'nuxt-og-image',
@@ -16,6 +18,10 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css'],
+
+  site: {
+    url: 'https://content-directory.quila.dev'
+  },
 
   content: {
     build: {
@@ -32,7 +38,6 @@ export default defineNuxtConfig({
 
   ui: {
     eslint: {
-      ignore: ['^stars$', '^star-layer$', '^star$'],
       rules: {
         'no-unknown-classes': 'error',
         'no-conflicting-classes': 'error',
@@ -54,6 +59,14 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  // o padrão do @nuxt/fonts é 400–700; os títulos usam 800
+  fonts: {
+    families: [
+      { name: 'Archivo', weights: [400, 500, 600, 700, 800] },
+      { name: 'DM Mono', weights: [400, 500] }
+    ]
   },
 
   llms: {

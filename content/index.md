@@ -3,12 +3,12 @@ title: Content Directory
 description: Diferente do desenvolvimento web tradicional, focado apenas em criar interfaces ou APIs, a engenharia web abrange todo o ciclo de vida e infraestrutura do ecossistema digital moderno.
 ---
 
-::u-page-hero{class="dark:bg-gradient-to-b from-neutral-900 to-neutral-950"}
-#top
-:hero-background
+::u-page-hero
+#headline
+Base de conhecimento / Engenharia web
 
 #title
-Content [Directory]{.text-primary}.
+Content [Directory]{.text-primary .font-serif .font-normal .italic}.
 
 #description
 Base de conhecimento sobre engenharia web: a aplicação de princípios rígidos de engenharia, arquitetura de software e design de sistemas no desenvolvimento de aplicações web escaláveis, de alta performance e resilientes. Diferente do desenvolvimento web tradicional, focado apenas em criar interfaces ou APIs, a engenharia web abrange todo o ciclo de vida e infraestrutura do ecossistema digital moderno.
@@ -35,7 +35,7 @@ Base de conhecimento sobre engenharia web: a aplicação de princípios rígidos
   :::
 ::
 
-::u-page-section{id="pilares" class="dark:bg-neutral-950"}
+::u-page-section{id="pilares" class="border-t border-default"}
 #title
 Pilares da Engenharia Web Moderna
 
@@ -123,7 +123,7 @@ Pilares da Engenharia Web Moderna
   :::
 ::
 
-::u-page-section{class="dark:bg-neutral-950"}
+::u-page-section{class="border-t border-default"}
 #title
 Explore os guias
 
@@ -201,7 +201,7 @@ Explore os guias
   :::
 ::
 
-::u-page-section{class="dark:bg-gradient-to-b from-neutral-950 to-neutral-900"}
+::u-page-section{class="border-t border-default"}
   :::u-page-c-t-a
   ---
   links:
@@ -214,9 +214,6 @@ Explore os guias
       icon: i-lucide-layers
   title: Pronto para aprofundar em Engenharia Web?
   description: Percorra os guias de acessibilidade, performance, sustentabilidade, UX Engineering, Product Discovery e qualidade.
-  class: dark:bg-neutral-950
   ---
-
-  :stars-bg
   :::
 ::

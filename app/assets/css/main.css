@@ -5,21 +5,51 @@
 
 @theme static {
   --container-8xl: 90rem;
-  --font-sans: 'Public Sans', sans-serif;
 
-  --color-green-50: #EFFDF5;
-  --color-green-100: #D9FBE8;
-  --color-green-200: #B3F5D1;
-  --color-green-300: #75EDAE;
-  --color-green-400: #00DC82;
-  --color-green-500: #00C16A;
-  --color-green-600: #00A155;
-  --color-green-700: #007F45;
-  --color-green-800: #016538;
-  --color-green-900: #0A5331;
-  --color-green-950: #052E16;
+  /* Tipografia: sans do quila.dev, mono do labafero.com */
+  --font-sans: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'DM Mono', ui-monospace, monospace;
+
+  /* Verde do quila.dev (#009150 no claro, #62d49c no escuro) */
+  --color-quila-50: #EEFBF4;
+  --color-quila-100: #D6F5E3;
+  --color-quila-200: #B0EACB;
+  --color-quila-300: #8ADFB4;
+  --color-quila-400: #62D49C;
+  --color-quila-500: #009150;
+  --color-quila-600: #007A44;
+  --color-quila-700: #006238;
+  --color-quila-800: #064E2F;
+  --color-quila-900: #064028;
+  --color-quila-950: #022417;
+
+  /* Neutros: cinzas puros do quila.dev no claro, azul-carvão do labafero.com no escuro */
+  --color-ink-50: #F6F6F6;
+  --color-ink-100: #EFEFEF;
+  --color-ink-200: #E2E2E2;
+  --color-ink-300: #D2D2D2;
+  --color-ink-400: #A5A7A9;
+  --color-ink-500: #74767A;
+  --color-ink-600: #525252;
+  --color-ink-700: #32353D;
+  --color-ink-800: #23262E;
+  --color-ink-900: #181B22;
+  --color-ink-950: #111319;
+
+  /* Lima do labafero.com, usada como primária no modo escuro */
+  --color-labafero: #E8FF5C;
 }
 
 :root {
   --ui-container: var(--container-8xl);
+  --ui-radius: 0.125rem;
+
+  /* 600 em vez de 500: #009150 sobre branco não atinge contraste AA (4,1:1) */
+  --ui-primary: var(--ui-color-primary-600);
+}
+
+.dark {
+  --ui-primary: var(--color-labafero);
+  --ui-bg: var(--ui-color-neutral-950);
+  --ui-bg-muted: var(--ui-color-neutral-900);
 }
